@@ -1,27 +1,137 @@
-## Laravel PHP Framework
+## ListEstate PropertyGuru Challenge
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+## Installation requirements
+    Mysql 5.6
+    Node
+    Gulp 
+    
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+## Framework Used
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+    Laravel 5.1
 
-## Official Documentation
+## Directory Structure
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+├── app
+│   ├── Console
+│   ├── Events
+│   ├── Exceptions
+│   ├── Http
+│   ├── Jobs
+│   ├── Listeners
+│   ├── Policies
+│   └── Providers
+├── bootstrap
+│   └── cache
+├── config
+├── database
+│   ├── factories
+│   ├── migrations
+│   └── seeds
+├── node_modules
+│   ├── bootstrap-sass
+│   ├── gulp
+│   ├── laravel-elixir
+│   └── materialize-css
+├── public
+│   ├── css
+│   ├── font
+│   └── js
+├── resources
+│   ├── assets
+│   ├── lang
+│   └── views
+├── storage
+│   ├── app
+│   ├── framework
+│   └── logs
+├── tests
+└── vendor
+    ├── bin
+    ├── classpreloader
+    ├── composer
+    ├── danielstjules
+    ├── dnoegel
+    ├── doctrine
+    ├── fzaninotto
+    ├── hamcrest
+    ├── jakub-onderka
+    ├── jeremeamia
+    ├── laravel
+    ├── league
+    ├── mockery
+    ├── monolog
+    ├── mtdowling
+    ├── nesbot
+    ├── nikic
+    ├── paragonie
+    ├── phpdocumentor
+    ├── phpspec
+    ├── phpunit
+    ├── psr
+    ├── psy
+    ├── sebastian
+    ├── swiftmailer
+    ├── symfony
+    └── vlucas
 
-## Contributing
+## Database settings
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+    You need to edit .env file settings
+    DB_HOST=localhost
+    DB_DATABASE=listestate
+    DB_USERNAME=listestate
+    DB_PASSWORD=d3v123
+    
+## Database Installation
 
-## Security Vulnerabilities
+    Need to run command " php artisan migrate " to create tables.
+    Need to run commanf " php artisan db:seed " to create the seed data.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+## known issues
 
-### License
+    search working only one time. 
+    
+    
+## operational procedure 
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+    Clicking on individual property will set the data beside in property details page
+    
+## code explaination 
+
+    root folder of the application is 
+    
+    app/public
+    
+   
+    routes are present 
+        app/http/routes
+    controllers
+        app/http/controllers/estate
+    model
+        app/estate.php
+        
+    views
+        app/resource/views/home.blade.php - for main page
+        app/resource/views/proplist.blade.php - for proplist
+        app/resource/views/propdetails.blade.php - for propdetails
+        
+        
+    style
+        sass is used to compile css gulp will compile the resources/assests/scss/app.scss and materialize.scss to public/css/app.css
+       
+     javascript 
+        app/public/js
+        
+##need to give wirtable permissions for 
+
+app/storage/framework
+app/storage/logs
+
+##DEMO URL would be 
+
+url[http://158.69.216.161/listestate]
+
+##github download url
+
+url[https://github.com/rteja91/pguruchallenge/archive/master.zip]
