@@ -1,0 +1,111 @@
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "./materialize";
+html{
+  font-family: "Lato", sans-serif;
+}
+nav{
+  background: #fff;
+  .brand-logo{
+    color: #ee2200;
+    .brandTag{
+        color : #f9a825;
+        display: inline-table;
+        font-size: 16px;
+        vertical-align: middle;
+    }
+  }
+  .cntOverview{
+    border-radius : 5px;
+    border: 1px solid #00695c;
+    color : #222222;
+    background: #00cc99;
+    margin: 10px;
+    line-height: 2;
+    padding: 5px;
+  }
+}
+.propList{
+  border: 1px solid #f5f333;
+  .search-wrapper{
+    margin: 10px 12px;
+    transition: margin 0.25s ease 0s;
+    #search{
+      margin: 0 0 0 40px;
+      padding: 0 2px;
+      border-bottom: none;
+      &:focus{
+        border-bottom: none;
+        box-shadow: none;
+      }
+    }
+    i {
+      &.material-icons{
+        position: absolute;
+        top: 12px;
+        left: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .collection{
+    border: none;
+    margin: 10px;
+    .collection-item{
+      &.avatar{
+        margin-bottom: 10px;
+        border: 1px solid #e0e0e0;
+        min-height: 60px;
+        .price{
+          position: absolute;
+          right: 50px;
+          top: 20px;
+          color: chocolate;
+          &:hover{
+            color : #ff0000;
+          }
+
+        }
+        &:hover{
+          background: lavenderblush;
+          cursor: pointer;
+          color :  #222222;
+        }
+        .secondary-content{
+          top :20px;
+        }
+      }
+    }
+
+  }
+}
+.propDetails {
+  padding : 10px;
+  border: 1px solid #f5f333;
+  .propDetailsrow{
+    padding: 10px;
+    margin: auto;
+    .propImage{
+      margin: 0.5rem 0 1rem 0;
+      img {
+        width: 100%;
+      }
+    }
+
+    .propItemDetail{
+      .collection{
+        .collection-item{
+          &.avatar{
+            min-height: 60px;
+
+          }
+        }
+
+      }
+
+    }
+    .propLocation{
+      min-height: 300px;
+    }
+  }
+}
