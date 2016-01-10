@@ -11,7 +11,7 @@
     Laravel 5.1
 
 ## Directory Structure
-
+blockquote[
 ├── app
 │   ├── Console
 │   ├── Events
@@ -74,7 +74,7 @@
     ├── swiftmailer
     ├── symfony
     └── vlucas
-
+]
 ## Database settings
 
     You need to edit .env file settings
